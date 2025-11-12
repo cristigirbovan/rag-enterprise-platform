@@ -98,7 +98,7 @@
 
     <g transform="translate(790, 320)">
       <rect x="0" y="0" width="220" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
-      <text x="110" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Security & Config</text>
+      <text x="110" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Security &amp; Config</text>
       <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">CORS, Rate limiting, API keys</text>
       <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Circuit breakers (Resilience4j)</text>
     </g>
