@@ -10,19 +10,31 @@ Once deployed, the site will be available at: `https://[your-username].github.io
 
 ```
 site/
-├── index.html              # Landing page
-├── features.html           # Feature showcase (to be created)
-├── architecture.html       # Architecture overview (to be created)
-├── use-cases.html          # Business use cases (to be created)
-├── project.html            # Technical project details
-├── contact.html            # Contact/demo request
+├── index.html              # Landing page with overview
+├── project.html            # "How It Works" - Functional explanations
+├── contact.html            # Contact form
+├── features.html           # Redirect to project.html (legacy)
+├── architecture.html       # Redirect to project.html (legacy)
+├── use-cases.html          # Redirect to index.html (legacy)
 ├── css/
 │   └── custom.css          # Custom styling
 ├── js/
 │   └── main.js             # Interactivity
-├── images/                 # Architecture diagrams and screenshots
+├── images/
+│   ├── claracore-logo.png         # Rounded logo
+│   ├── functional-architecture.svg # System architecture diagram
+│   └── functional-flow.svg         # Process flow diagram
 └── README.md               # This file
 ```
+
+### Navigation Structure
+
+The site has been simplified to 3 main pages:
+- **Home** (`index.html`) - Overview, features preview, use cases
+- **How It Works** (`project.html`) - Detailed functional explanations in plain language
+- **Contact** (`contact.html`) - Get in touch form
+
+Legacy pages (features.html, architecture.html, use-cases.html) automatically redirect to the appropriate current page.
 
 ## 🚀 Deploying to GitHub Pages
 
@@ -74,9 +86,9 @@ Before deploying, customize these elements:
 ### 1. Contact Information
 
 Edit `contact.html`:
-- Replace `YOUR_FORM_ID` with your Formspree form ID, or
-- Replace the form with a mailto link
-- Update email address and LinkedIn URL
+- ✅ Already configured with mailto form action (cristigirbovan@gmail.com)
+- ✅ LinkedIn URL updated (linkedin.com/in/cristigirbovan)
+- Update these to your own contact details if needed
 
 ### 2. GitHub Links
 
@@ -102,18 +114,34 @@ Then reference them in HTML:
 <img src="images/RAG_System_Functional_Architecture.png" alt="Architecture">
 ```
 
-## 🎨 Additional Pages to Create
+## 🎨 Content Overview
 
-The site currently has placeholders for:
+The site uses a simplified, user-friendly approach:
 
-### features.html
-Create a detailed page showcasing all 35 features organized by category.
+### index.html (Home)
+- Hero section with clear value proposition
+- Key metrics and benefits
+- Features overview with visual cards
+- Use cases preview
+- Functional architecture diagram
+- Technology stack highlights
 
-### architecture.html
-Add architecture diagrams and technical overview.
+### project.html (How It Works)
+- Plain language explanations (no jargon)
+- 3-step process overview
+- 5 retrieval strategies explained with real examples:
+  - Meaning-Based Search (Vector)
+  - Relationship-Based Search (Graph)
+  - Combined Search (Hybrid)
+  - Answer-First Search (HyDE)
+  - Multi-Part Search (Decomposition)
+- Technology foundation
+- System capabilities
 
-### use-cases.html
-Expand on business use cases with examples and success stories.
+### contact.html
+- Contact form (mailto-based)
+- Direct contact information
+- LinkedIn profile link
 
 ## 🔧 Local Development
 
