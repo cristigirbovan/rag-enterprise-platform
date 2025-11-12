@@ -1,0 +1,278 @@
+<svg width="1400" height="900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#475569" />
+    </marker>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="700" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0f172a" text-anchor="middle">
+    RAG System - Functional Architecture
+  </text>
+  <text x="700" y="65" font-family="Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">
+    Multi-Module Spring Boot Application with React Frontend
+  </text>
+
+  <!-- Frontend Layer -->
+  <g id="frontend-layer">
+    <rect x="50" y="100" width="1300" height="140" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="3" filter="url(#shadow)"/>
+    <text x="700" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#5b21b6" text-anchor="middle">
+      Frontend Layer - React + TypeScript
+    </text>
+
+    <g transform="translate(100, 150)">
+      <rect x="0" y="0" width="180" height="70" rx="6" fill="white" stroke="#a855f7" stroke-width="2"/>
+      <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#6b21a8" text-anchor="middle">Chat Interface</text>
+      <text x="10" y="38" font-family="Arial" font-size="9" fill="#6b21a8">• Multi-turn conversation</text>
+      <text x="10" y="52" font-family="Arial" font-size="9" fill="#6b21a8">• Real-time streaming (SSE)</text>
+      <text x="10" y="66" font-family="Arial" font-size="9" fill="#6b21a8">• Voice input</text>
+    </g>
+
+    <g transform="translate(310, 150)">
+      <rect x="0" y="0" width="180" height="70" rx="6" fill="white" stroke="#a855f7" stroke-width="2"/>
+      <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#6b21a8" text-anchor="middle">Analytics Dashboard</text>
+      <text x="10" y="38" font-family="Arial" font-size="9" fill="#6b21a8">• Cost tracking</text>
+      <text x="10" y="52" font-family="Arial" font-size="9" fill="#6b21a8">• Quality metrics charts</text>
+      <text x="10" y="66" font-family="Arial" font-size="9" fill="#6b21a8">• Knowledge graph viz</text>
+    </g>
+
+    <g transform="translate(520, 150)">
+      <rect x="0" y="0" width="180" height="70" rx="6" fill="white" stroke="#a855f7" stroke-width="2"/>
+      <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#6b21a8" text-anchor="middle">State Management</text>
+      <text x="10" y="38" font-family="Arial" font-size="9" fill="#6b21a8">• Zustand store</text>
+      <text x="10" y="52" font-family="Arial" font-size="9" fill="#6b21a8">• React Query (data fetch)</text>
+      <text x="10" y="66" font-family="Arial" font-size="9" fill="#6b21a8">• Conversation persistence</text>
+    </g>
+
+    <g transform="translate(730, 150)">
+      <rect x="0" y="0" width="180" height="70" rx="6" fill="white" stroke="#a855f7" stroke-width="2"/>
+      <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#6b21a8" text-anchor="middle">UI Components</text>
+      <text x="10" y="38" font-family="Arial" font-size="9" fill="#6b21a8">• shadcn/ui + Tailwind</text>
+      <text x="10" y="52" font-family="Arial" font-size="9" fill="#6b21a8">• Dark mode support</text>
+      <text x="10" y="66" font-family="Arial" font-size="9" fill="#6b21a8">• i18n (EN/ES/FR/DE)</text>
+    </g>
+
+    <g transform="translate(940, 150)">
+      <rect x="0" y="0" width="180" height="70" rx="6" fill="white" stroke="#a855f7" stroke-width="2"/>
+      <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#6b21a8" text-anchor="middle">API Client</text>
+      <text x="10" y="38" font-family="Arial" font-size="9" fill="#6b21a8">• Axios HTTP client</text>
+      <text x="10" y="52" font-family="Arial" font-size="9" fill="#6b21a8">• SSE event handling</text>
+      <text x="10" y="66" font-family="Arial" font-size="9" fill="#6b21a8">• 15 API endpoints</text>
+    </g>
+  </g>
+
+  <!-- API Layer -->
+  <g id="api-layer">
+    <rect x="50" y="270" width="1300" height="120" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="3" filter="url(#shadow)"/>
+    <text x="700" y="300" font-family="Arial" font-size="18" font-weight="bold" fill="#1e40af" text-anchor="middle">
+      API Layer - REST + Server-Sent Events (Spring Boot 3.2.5)
+    </text>
+
+    <g transform="translate(100, 320)">
+      <rect x="0" y="0" width="200" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="100" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">RagApiController</text>
+      <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">/query, /ingest, /feedback</text>
+      <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Main RAG operations</text>
+    </g>
+
+    <g transform="translate(330, 320)">
+      <rect x="0" y="0" width="200" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="100" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">StreamingController</text>
+      <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">/query-stream (SSE)</text>
+      <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Real-time response streaming</text>
+    </g>
+
+    <g transform="translate(560, 320)">
+      <rect x="0" y="0" width="200" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="100" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">AnalyticsController</text>
+      <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">/analytics, /graph, /conversations</text>
+      <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Metrics and management</text>
+    </g>
+
+    <g transform="translate(790, 320)">
+      <rect x="0" y="0" width="220" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="110" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Security & Config</text>
+      <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">CORS, Rate limiting, API keys</text>
+      <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Circuit breakers (Resilience4j)</text>
+    </g>
+  </g>
+
+  <!-- Core Services -->
+  <g id="core-services">
+    <rect x="50" y="420" width="840" height="200" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/>
+    <text x="470" y="450" font-family="Arial" font-size="18" font-weight="bold" fill="#92400e" text-anchor="middle">
+      Core Services (rag-core module)
+    </text>
+
+    <g transform="translate(80, 470)">
+      <rect x="0" y="0" width="180" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+      <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">RagService</text>
+      <text x="10" y="38" font-family="Arial" font-size="9" fill="#92400e">Main orchestration:</text>
+      <text x="10" y="52" font-family="Arial" font-size="8" fill="#92400e">• Query processing</text>
+      <text x="10" y="65" font-family="Arial" font-size="8" fill="#92400e">• Strategy routing</text>
+      <text x="10" y="78" font-family="Arial" font-size="8" fill="#92400e">• Response generation</text>
+      <text x="10" y="91" font-family="Arial" font-size="8" fill="#92400e">• Streaming support</text>
+      <text x="10" y="104" font-family="Arial" font-size="8" fill="#92400e">• Async processing</text>
+      <text x="10" y="117" font-family="Arial" font-size="8" fill="#92400e">• Error handling</text>
+    </g>
+
+    <g transform="translate(285, 470)">
+      <rect x="0" y="0" width="190" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+      <text x="95" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Retrieval Strategies</text>
+      <text x="10" y="38" font-family="Arial" font-size="8" fill="#92400e" font-weight="bold">Strategy Pattern:</text>
+      <text x="10" y="52" font-family="Arial" font-size="8" fill="#92400e">• VectorRetrievalStrategy</text>
+      <text x="10" y="65" font-family="Arial" font-size="8" fill="#92400e">• GraphRetrievalStrategy</text>
+      <text x="10" y="78" font-family="Arial" font-size="8" fill="#92400e">• HybridRetrievalStrategy</text>
+      <text x="10" y="91" font-family="Arial" font-size="8" fill="#92400e">• HyDERetrievalStrategy</text>
+      <text x="10" y="104" font-family="Arial" font-size="8" fill="#92400e">• DecompositionStrategy</text>
+      <text x="10" y="117" font-family="Arial" font-size="8" fill="#92400e">AUTO: Intelligent selection</text>
+    </g>
+
+    <g transform="translate(500, 470)">
+      <rect x="0" y="0" width="180" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+      <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">DocumentProcessor</text>
+      <text x="10" y="38" font-family="Arial" font-size="9" fill="#92400e">Multi-modal processing:</text>
+      <text x="10" y="52" font-family="Arial" font-size="8" fill="#92400e">• PDF/DOCX parsing</text>
+      <text x="10" y="65" font-family="Arial" font-size="8" fill="#92400e">• Semantic chunking</text>
+      <text x="10" y="78" font-family="Arial" font-size="8" fill="#92400e">• Section-aware split</text>
+      <text x="10" y="91" font-family="Arial" font-size="8" fill="#92400e">• Image analysis (Vision)</text>
+      <text x="10" y="104" font-family="Arial" font-size="8" fill="#92400e">• Audio transcription</text>
+      <text x="10" y="117" font-family="Arial" font-size="8" fill="#92400e">• Video frame extraction</text>
+    </g>
+
+    <g transform="translate(700, 470)">
+      <rect x="0" y="0" width="170" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+      <text x="85" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Entity Extractor</text>
+      <text x="10" y="38" font-family="Arial" font-size="9" fill="#92400e">LLM-powered:</text>
+      <text x="10" y="52" font-family="Arial" font-size="8" fill="#92400e">• Named entities</text>
+      <text x="10" y="65" font-family="Arial" font-size="8" fill="#92400e">• Relationships</text>
+      <text x="10" y="78" font-family="Arial" font-size="8" fill="#92400e">• Topics</text>
+      <text x="10" y="91" font-family="Arial" font-size="8" fill="#92400e">• Graph building</text>
+      <text x="10" y="104" font-family="Arial" font-size="8" fill="#92400e">• Caching layer</text>
+    </g>
+  </g>
+
+  <!-- Utilities & Common -->
+  <g id="utilities">
+    <rect x="920" y="420" width="430" height="200" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="3" filter="url(#shadow)"/>
+    <text x="1135" y="450" font-family="Arial" font-size="18" font-weight="bold" fill="#4338ca" text-anchor="middle">
+      Utilities &amp; Common (rag-common)
+    </text>
+
+    <g transform="translate(950, 470)">
+      <rect x="0" y="0" width="180" height="65" rx="6" fill="white" stroke="#6366f1" stroke-width="2"/>
+      <text x="90" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Quality Evaluation</text>
+      <text x="10" y="34" font-family="Arial" font-size="8" fill="#4338ca">• Relevance metrics</text>
+      <text x="10" y="46" font-family="Arial" font-size="8" fill="#4338ca">• Faithfulness scoring</text>
+      <text x="10" y="58" font-family="Arial" font-size="8" fill="#4338ca">• Coherence analysis</text>
+    </g>
+
+    <g transform="translate(1150, 470)">
+      <rect x="0" y="0" width="180" height="65" rx="6" fill="white" stroke="#6366f1" stroke-width="2"/>
+      <text x="90" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Cost Tracking</text>
+      <text x="10" y="34" font-family="Arial" font-size="8" fill="#4338ca">• Token counting</text>
+      <text x="10" y="46" font-family="Arial" font-size="8" fill="#4338ca">• Budget monitoring</text>
+      <text x="10" y="58" font-family="Arial" font-size="8" fill="#4338ca">• Cost per query</text>
+    </g>
+
+    <g transform="translate(950, 550)">
+      <rect x="0" y="0" width="180" height="50" rx="6" fill="white" stroke="#6366f1" stroke-width="2"/>
+      <text x="90" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Security</text>
+      <text x="10" y="34" font-family="Arial" font-size="8" fill="#4338ca">• PII detection/redaction</text>
+      <text x="10" y="46" font-family="Arial" font-size="8" fill="#4338ca">• Content filtering</text>
+    </g>
+
+    <g transform="translate(1150, 550)">
+      <rect x="0" y="0" width="180" height="50" rx="6" fill="white" stroke="#6366f1" stroke-width="2"/>
+      <text x="90" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Metrics Service</text>
+      <text x="10" y="34" font-family="Arial" font-size="8" fill="#4338ca">• Prometheus integration</text>
+      <text x="10" y="46" font-family="Arial" font-size="8" fill="#4338ca">• Custom metrics</text>
+    </g>
+  </g>
+
+  <!-- Storage Layer -->
+  <g id="storage-layer">
+    <rect x="50" y="650" width="1300" height="220" rx="12" fill="#d1fae5" stroke="#10b981" stroke-width="3" filter="url(#shadow)"/>
+    <text x="700" y="680" font-family="Arial" font-size="18" font-weight="bold" fill="#065f46" text-anchor="middle">
+      Storage Layer (rag-storage module) + External Databases
+    </text>
+
+    <g transform="translate(100, 700)">
+      <rect x="0" y="0" width="230" height="145" rx="8" fill="white" stroke="#16a34a" stroke-width="3"/>
+      <text x="115" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">Weaviate</text>
+      <text x="115" y="45" font-family="Arial" font-size="11" fill="#065f46" text-anchor="middle">Vector Database</text>
+      <rect x="15" y="55" width="200" height="1" fill="#16a34a"/>
+      <text x="20" y="73" font-family="Arial" font-size="9" fill="#065f46">Repository:</text>
+      <text x="20" y="87" font-family="Arial" font-size="8" fill="#065f46">• WeaviateVectorStore</text>
+      <text x="20" y="100" font-family="Arial" font-size="8" fill="#065f46">• HNSW indexing</text>
+      <text x="20" y="113" font-family="Arial" font-size="8" fill="#065f46">• 1536-dim embeddings</text>
+      <text x="20" y="126" font-family="Arial" font-size="8" fill="#065f46">• Semantic search</text>
+    </g>
+
+    <g transform="translate(360, 700)">
+      <rect x="0" y="0" width="230" height="145" rx="8" fill="white" stroke="#0284c7" stroke-width="3"/>
+      <text x="115" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#075985" text-anchor="middle">Neo4j</text>
+      <text x="115" y="45" font-family="Arial" font-size="11" fill="#075985" text-anchor="middle">Graph Database</text>
+      <rect x="15" y="55" width="200" height="1" fill="#0284c7"/>
+      <text x="20" y="73" font-family="Arial" font-size="9" fill="#075985">Repository:</text>
+      <text x="20" y="87" font-family="Arial" font-size="8" fill="#075985">• Neo4jGraphRepository</text>
+      <text x="20" y="100" font-family="Arial" font-size="8" fill="#075985">• Entity nodes</text>
+      <text x="20" y="113" font-family="Arial" font-size="8" fill="#075985">• Relationships</text>
+      <text x="20" y="126" font-family="Arial" font-size="8" fill="#075985">• Cypher queries</text>
+    </g>
+
+    <g transform="translate(620, 700)">
+      <rect x="0" y="0" width="230" height="145" rx="8" fill="white" stroke="#6366f1" stroke-width="3"/>
+      <text x="115" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#4338ca" text-anchor="middle">PostgreSQL</text>
+      <text x="115" y="45" font-family="Arial" font-size="11" fill="#4338ca" text-anchor="middle">Relational Database</text>
+      <rect x="15" y="55" width="200" height="1" fill="#6366f1"/>
+      <text x="20" y="73" font-family="Arial" font-size="9" fill="#4338ca">JPA Repositories:</text>
+      <text x="20" y="87" font-family="Arial" font-size="8" fill="#4338ca">• Evaluation results</text>
+      <text x="20" y="100" font-family="Arial" font-size="8" fill="#4338ca">• User feedback</text>
+      <text x="20" y="113" font-family="Arial" font-size="8" fill="#4338ca">• System metadata</text>
+      <text x="20" y="126" font-family="Arial" font-size="8" fill="#4338ca">• Conversations</text>
+    </g>
+
+    <g transform="translate(880, 700)">
+      <rect x="0" y="0" width="230" height="145" rx="8" fill="white" stroke="#dc2626" stroke-width="3"/>
+      <text x="115" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#991b1b" text-anchor="middle">Redis</text>
+      <text x="115" y="45" font-family="Arial" font-size="11" fill="#991b1b" text-anchor="middle">Cache Layer</text>
+      <rect x="15" y="55" width="200" height="1" fill="#dc2626"/>
+      <text x="20" y="73" font-family="Arial" font-size="9" fill="#991b1b">Caching:</text>
+      <text x="20" y="87" font-family="Arial" font-size="8" fill="#991b1b">• Query results</text>
+      <text x="20" y="100" font-family="Arial" font-size="8" fill="#991b1b">• Embeddings cache</text>
+      <text x="20" y="113" font-family="Arial" font-size="8" fill="#991b1b">• Entity extraction</text>
+      <text x="20" y="126" font-family="Arial" font-size="8" fill="#991b1b">• Session data</text>
+    </g>
+
+    <g transform="translate(1140, 700)">
+      <rect x="0" y="0" width="190" height="145" rx="8" fill="white" stroke="#ea580c" stroke-width="3"/>
+      <text x="95" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#9a3412" text-anchor="middle">LLM Provider</text>
+      <text x="95" y="45" font-family="Arial" font-size="10" fill="#9a3412" text-anchor="middle">Spring AI Integration</text>
+      <rect x="15" y="55" width="160" height="1" fill="#ea580c"/>
+      <text x="20" y="73" font-family="Arial" font-size="9" fill="#9a3412">Supported:</text>
+      <text x="20" y="87" font-family="Arial" font-size="8" fill="#9a3412">• OpenAI (GPT-4)</text>
+      <text x="20" y="100" font-family="Arial" font-size="8" fill="#9a3412">• ProxyLLM</text>
+      <text x="20" y="113" font-family="Arial" font-size="8" fill="#9a3412">• Embeddings API</text>
+      <text x="20" y="126" font-family="Arial" font-size="8" fill="#9a3412">• Vision API</text>
+    </g>
+  </g>
+
+  <!-- Arrows showing data flow -->
+  <line x1="700" y1="240" x2="700" y2="270" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="470" y1="390" x2="470" y2="420" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="470" y1="620" x2="470" y2="650" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1135" y1="390" x2="1135" y2="420" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Monitoring annotation -->
+  <text x="1280" y="690" font-family="Arial" font-size="10" fill="#64748b" text-anchor="end">
+    Prometheus + Grafana →
+  </text>
+</svg>
