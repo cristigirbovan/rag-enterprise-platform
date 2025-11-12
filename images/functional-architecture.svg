@@ -1,4 +1,4 @@
-<svg width="1400" height="900" xmlns="http://www.w3.org/2000/svg">
+<svg width="1400" height="960" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
       <polygon points="0 0, 10 3, 0 6" fill="#475569" />
@@ -70,48 +70,88 @@
 
   <!-- API Layer -->
   <g id="api-layer">
-    <rect x="50" y="270" width="1300" height="120" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="3" filter="url(#shadow)"/>
+    <rect x="50" y="270" width="1300" height="180" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="3" filter="url(#shadow)"/>
     <text x="700" y="300" font-family="Arial" font-size="18" font-weight="bold" fill="#1e40af" text-anchor="middle">
-      API Layer - REST + Server-Sent Events (Spring Boot 3.2.5)
+      API Layer - REST + Server-Sent Events (Spring Boot 3.2.5) - 15 Endpoints
     </text>
 
-    <g transform="translate(100, 320)">
-      <rect x="0" y="0" width="200" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
-      <text x="100" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">RagApiController</text>
-      <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">/query, /ingest, /feedback</text>
-      <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Main RAG operations</text>
+    <!-- Row 1 -->
+    <g transform="translate(80, 320)">
+      <rect x="0" y="0" width="190" height="110" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="95" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">RagApiController</text>
+      <text x="10" y="34" font-family="Arial" font-size="7" fill="#1e40af" font-weight="bold">Main RAG operations:</text>
+      <text x="10" y="46" font-family="Arial" font-size="7" fill="#1e40af">POST /api/query</text>
+      <text x="10" y="56" font-family="Arial" font-size="7" fill="#1e40af">POST /api/ingest</text>
+      <text x="10" y="66" font-family="Arial" font-size="7" fill="#1e40af">POST /api/feedback</text>
+      <text x="10" y="76" font-family="Arial" font-size="7" fill="#1e40af">GET /api/strategies</text>
+      <text x="10" y="86" font-family="Arial" font-size="7" fill="#1e40af">GET /api/health</text>
+      <text x="10" y="96" font-family="Arial" font-size="7" fill="#1e40af">DELETE /api/clear</text>
     </g>
 
-    <g transform="translate(330, 320)">
-      <rect x="0" y="0" width="200" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
-      <text x="100" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">StreamingController</text>
-      <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">/query-stream (SSE)</text>
-      <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Real-time response streaming</text>
+    <g transform="translate(290, 320)">
+      <rect x="0" y="0" width="190" height="110" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="95" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">StreamingController</text>
+      <text x="10" y="34" font-family="Arial" font-size="7" fill="#1e40af" font-weight="bold">Real-time streaming:</text>
+      <text x="10" y="46" font-family="Arial" font-size="7" fill="#1e40af">GET /api/query-stream</text>
+      <text x="10" y="56" font-family="Arial" font-size="7" fill="#1e40af">Server-Sent Events (SSE)</text>
+      <text x="10" y="66" font-family="Arial" font-size="7" fill="#1e40af">Chunked responses</text>
+      <text x="10" y="76" font-family="Arial" font-size="7" fill="#1e40af">Real-time feedback</text>
+      <text x="10" y="86" font-family="Arial" font-size="7" fill="#1e40af">Progress updates</text>
     </g>
 
-    <g transform="translate(560, 320)">
-      <rect x="0" y="0" width="200" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
-      <text x="100" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">AnalyticsController</text>
-      <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">/analytics, /graph, /conversations</text>
-      <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Metrics and management</text>
+    <g transform="translate(500, 320)">
+      <rect x="0" y="0" width="190" height="110" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="95" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">AnalyticsController</text>
+      <text x="10" y="34" font-family="Arial" font-size="7" fill="#1e40af" font-weight="bold">Metrics &amp; management:</text>
+      <text x="10" y="46" font-family="Arial" font-size="7" fill="#1e40af">GET /api/analytics</text>
+      <text x="10" y="56" font-family="Arial" font-size="7" fill="#1e40af">GET /api/analytics/cost</text>
+      <text x="10" y="66" font-family="Arial" font-size="7" fill="#1e40af">GET /api/analytics/quality</text>
+      <text x="10" y="76" font-family="Arial" font-size="7" fill="#1e40af">GET /api/graph</text>
+      <text x="10" y="86" font-family="Arial" font-size="7" fill="#1e40af">GET /api/conversations</text>
     </g>
 
-    <g transform="translate(790, 320)">
-      <rect x="0" y="0" width="220" height="55" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
-      <text x="110" y="20" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">Security &amp; Config</text>
-      <text x="10" y="36" font-family="Arial" font-size="8" fill="#1e40af">CORS, Rate limiting, API keys</text>
-      <text x="10" y="48" font-family="Arial" font-size="8" fill="#1e40af">Circuit breakers (Resilience4j)</text>
+    <g transform="translate(710, 320)">
+      <rect x="0" y="0" width="190" height="110" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="95" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">DocumentController</text>
+      <text x="10" y="34" font-family="Arial" font-size="7" fill="#1e40af" font-weight="bold">Document management:</text>
+      <text x="10" y="46" font-family="Arial" font-size="7" fill="#1e40af">GET /api/documents</text>
+      <text x="10" y="56" font-family="Arial" font-size="7" fill="#1e40af">GET /api/documents/{id}</text>
+      <text x="10" y="66" font-family="Arial" font-size="7" fill="#1e40af">DELETE /api/documents/{id}</text>
+      <text x="10" y="76" font-family="Arial" font-size="7" fill="#1e40af">GET /api/search</text>
+      <text x="10" y="86" font-family="Arial" font-size="7" fill="#1e40af">POST /api/reindex</text>
+    </g>
+
+    <g transform="translate(920, 320)">
+      <rect x="0" y="0" width="190" height="110" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="95" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">ConfigController</text>
+      <text x="10" y="34" font-family="Arial" font-size="7" fill="#1e40af" font-weight="bold">Configuration:</text>
+      <text x="10" y="46" font-family="Arial" font-size="7" fill="#1e40af">GET /api/config</text>
+      <text x="10" y="56" font-family="Arial" font-size="7" fill="#1e40af">PUT /api/config/strategy</text>
+      <text x="10" y="66" font-family="Arial" font-size="7" fill="#1e40af">PUT /api/config/model</text>
+      <text x="10" y="76" font-family="Arial" font-size="7" fill="#1e40af">Security: CORS, Rate limit</text>
+      <text x="10" y="86" font-family="Arial" font-size="7" fill="#1e40af">Circuit breakers</text>
+    </g>
+
+    <g transform="translate(1130, 320)">
+      <rect x="0" y="0" width="190" height="110" rx="6" fill="white" stroke="#3b82f6" stroke-width="2"/>
+      <text x="95" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#1e40af" text-anchor="middle">SystemController</text>
+      <text x="10" y="34" font-family="Arial" font-size="7" fill="#1e40af" font-weight="bold">System monitoring:</text>
+      <text x="10" y="46" font-family="Arial" font-size="7" fill="#1e40af">GET /actuator/health</text>
+      <text x="10" y="56" font-family="Arial" font-size="7" fill="#1e40af">GET /actuator/metrics</text>
+      <text x="10" y="66" font-family="Arial" font-size="7" fill="#1e40af">GET /actuator/prometheus</text>
+      <text x="10" y="76" font-family="Arial" font-size="7" fill="#1e40af">GET /api/status</text>
+      <text x="10" y="86" font-family="Arial" font-size="7" fill="#1e40af">Swagger UI available</text>
     </g>
   </g>
 
   <!-- Core Services -->
   <g id="core-services">
-    <rect x="50" y="420" width="840" height="200" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/>
-    <text x="470" y="450" font-family="Arial" font-size="18" font-weight="bold" fill="#92400e" text-anchor="middle">
+    <rect x="50" y="480" width="840" height="200" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="3" filter="url(#shadow)"/>
+    <text x="470" y="510" font-family="Arial" font-size="18" font-weight="bold" fill="#92400e" text-anchor="middle">
       Core Services (rag-core module)
     </text>
 
-    <g transform="translate(80, 470)">
+    <g transform="translate(80, 530)">
       <rect x="0" y="0" width="180" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
       <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">RagService</text>
       <text x="10" y="38" font-family="Arial" font-size="9" fill="#92400e">Main orchestration:</text>
@@ -123,7 +163,7 @@
       <text x="10" y="117" font-family="Arial" font-size="8" fill="#92400e">• Error handling</text>
     </g>
 
-    <g transform="translate(285, 470)">
+    <g transform="translate(285, 530)">
       <rect x="0" y="0" width="190" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
       <text x="95" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Retrieval Strategies</text>
       <text x="10" y="38" font-family="Arial" font-size="8" fill="#92400e" font-weight="bold">Strategy Pattern:</text>
@@ -135,7 +175,7 @@
       <text x="10" y="117" font-family="Arial" font-size="8" fill="#92400e">AUTO: Intelligent selection</text>
     </g>
 
-    <g transform="translate(500, 470)">
+    <g transform="translate(500, 530)">
       <rect x="0" y="0" width="180" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
       <text x="90" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">DocumentProcessor</text>
       <text x="10" y="38" font-family="Arial" font-size="9" fill="#92400e">Multi-modal processing:</text>
@@ -147,7 +187,7 @@
       <text x="10" y="117" font-family="Arial" font-size="8" fill="#92400e">• Video frame extraction</text>
     </g>
 
-    <g transform="translate(700, 470)">
+    <g transform="translate(700, 530)">
       <rect x="0" y="0" width="170" height="130" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
       <text x="85" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="#92400e" text-anchor="middle">Entity Extractor</text>
       <text x="10" y="38" font-family="Arial" font-size="9" fill="#92400e">LLM-powered:</text>
@@ -161,12 +201,12 @@
 
   <!-- Utilities & Common -->
   <g id="utilities">
-    <rect x="920" y="420" width="430" height="200" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="3" filter="url(#shadow)"/>
-    <text x="1135" y="450" font-family="Arial" font-size="18" font-weight="bold" fill="#4338ca" text-anchor="middle">
+    <rect x="920" y="480" width="430" height="200" rx="12" fill="#e0e7ff" stroke="#6366f1" stroke-width="3" filter="url(#shadow)"/>
+    <text x="1135" y="510" font-family="Arial" font-size="18" font-weight="bold" fill="#4338ca" text-anchor="middle">
       Utilities &amp; Common (rag-common)
     </text>
 
-    <g transform="translate(950, 470)">
+    <g transform="translate(950, 530)">
       <rect x="0" y="0" width="180" height="65" rx="6" fill="white" stroke="#6366f1" stroke-width="2"/>
       <text x="90" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Quality Evaluation</text>
       <text x="10" y="34" font-family="Arial" font-size="8" fill="#4338ca">• Relevance metrics</text>
@@ -174,7 +214,7 @@
       <text x="10" y="58" font-family="Arial" font-size="8" fill="#4338ca">• Coherence analysis</text>
     </g>
 
-    <g transform="translate(1150, 470)">
+    <g transform="translate(1150, 530)">
       <rect x="0" y="0" width="180" height="65" rx="6" fill="white" stroke="#6366f1" stroke-width="2"/>
       <text x="90" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Cost Tracking</text>
       <text x="10" y="34" font-family="Arial" font-size="8" fill="#4338ca">• Token counting</text>
@@ -182,14 +222,14 @@
       <text x="10" y="58" font-family="Arial" font-size="8" fill="#4338ca">• Cost per query</text>
     </g>
 
-    <g transform="translate(950, 550)">
+    <g transform="translate(950, 610)">
       <rect x="0" y="0" width="180" height="50" rx="6" fill="white" stroke="#6366f1" stroke-width="2"/>
       <text x="90" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Security</text>
       <text x="10" y="34" font-family="Arial" font-size="8" fill="#4338ca">• PII detection/redaction</text>
       <text x="10" y="46" font-family="Arial" font-size="8" fill="#4338ca">• Content filtering</text>
     </g>
 
-    <g transform="translate(1150, 550)">
+    <g transform="translate(1150, 610)">
       <rect x="0" y="0" width="180" height="50" rx="6" fill="white" stroke="#6366f1" stroke-width="2"/>
       <text x="90" y="18" font-family="Arial" font-size="11" font-weight="bold" fill="#4338ca" text-anchor="middle">Metrics Service</text>
       <text x="10" y="34" font-family="Arial" font-size="8" fill="#4338ca">• Prometheus integration</text>
@@ -199,12 +239,12 @@
 
   <!-- Storage Layer -->
   <g id="storage-layer">
-    <rect x="50" y="650" width="1300" height="220" rx="12" fill="#d1fae5" stroke="#10b981" stroke-width="3" filter="url(#shadow)"/>
-    <text x="700" y="680" font-family="Arial" font-size="18" font-weight="bold" fill="#065f46" text-anchor="middle">
+    <rect x="50" y="710" width="1300" height="220" rx="12" fill="#d1fae5" stroke="#10b981" stroke-width="3" filter="url(#shadow)"/>
+    <text x="700" y="740" font-family="Arial" font-size="18" font-weight="bold" fill="#065f46" text-anchor="middle">
       Storage Layer (rag-storage module) + External Databases
     </text>
 
-    <g transform="translate(100, 700)">
+    <g transform="translate(100, 760)">
       <rect x="0" y="0" width="230" height="145" rx="8" fill="white" stroke="#16a34a" stroke-width="3"/>
       <text x="115" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">Weaviate</text>
       <text x="115" y="45" font-family="Arial" font-size="11" fill="#065f46" text-anchor="middle">Vector Database</text>
@@ -216,7 +256,7 @@
       <text x="20" y="126" font-family="Arial" font-size="8" fill="#065f46">• Semantic search</text>
     </g>
 
-    <g transform="translate(360, 700)">
+    <g transform="translate(360, 760)">
       <rect x="0" y="0" width="230" height="145" rx="8" fill="white" stroke="#0284c7" stroke-width="3"/>
       <text x="115" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#075985" text-anchor="middle">Neo4j</text>
       <text x="115" y="45" font-family="Arial" font-size="11" fill="#075985" text-anchor="middle">Graph Database</text>
@@ -228,7 +268,7 @@
       <text x="20" y="126" font-family="Arial" font-size="8" fill="#075985">• Cypher queries</text>
     </g>
 
-    <g transform="translate(620, 700)">
+    <g transform="translate(620, 760)">
       <rect x="0" y="0" width="230" height="145" rx="8" fill="white" stroke="#6366f1" stroke-width="3"/>
       <text x="115" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#4338ca" text-anchor="middle">PostgreSQL</text>
       <text x="115" y="45" font-family="Arial" font-size="11" fill="#4338ca" text-anchor="middle">Relational Database</text>
@@ -240,7 +280,7 @@
       <text x="20" y="126" font-family="Arial" font-size="8" fill="#4338ca">• Conversations</text>
     </g>
 
-    <g transform="translate(880, 700)">
+    <g transform="translate(880, 760)">
       <rect x="0" y="0" width="230" height="145" rx="8" fill="white" stroke="#dc2626" stroke-width="3"/>
       <text x="115" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#991b1b" text-anchor="middle">Redis</text>
       <text x="115" y="45" font-family="Arial" font-size="11" fill="#991b1b" text-anchor="middle">Cache Layer</text>
@@ -252,7 +292,7 @@
       <text x="20" y="126" font-family="Arial" font-size="8" fill="#991b1b">• Session data</text>
     </g>
 
-    <g transform="translate(1140, 700)">
+    <g transform="translate(1140, 760)">
       <rect x="0" y="0" width="190" height="145" rx="8" fill="white" stroke="#ea580c" stroke-width="3"/>
       <text x="95" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#9a3412" text-anchor="middle">LLM Provider</text>
       <text x="95" y="45" font-family="Arial" font-size="10" fill="#9a3412" text-anchor="middle">Spring AI Integration</text>
@@ -267,12 +307,12 @@
 
   <!-- Arrows showing data flow -->
   <line x1="700" y1="240" x2="700" y2="270" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
-  <line x1="470" y1="390" x2="470" y2="420" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
-  <line x1="470" y1="620" x2="470" y2="650" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
-  <line x1="1135" y1="390" x2="1135" y2="420" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="470" y1="450" x2="470" y2="480" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="470" y1="680" x2="470" y2="710" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="1135" y1="450" x2="1135" y2="480" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
 
   <!-- Monitoring annotation -->
-  <text x="1280" y="690" font-family="Arial" font-size="10" fill="#64748b" text-anchor="end">
+  <text x="1280" y="750" font-family="Arial" font-size="10" fill="#64748b" text-anchor="end">
     Prometheus + Grafana →
   </text>
 </svg>
