@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Enterprise Platform - AI-Powered Knowledge Management</title>
+    <meta name="description" content="Production-grade RAG system with multi-modal processing, advanced retrieval strategies, and enterprise-ready features.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#7c3aed',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                        RAG Enterprise Platform
+                    </span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="features.html" class="text-gray-700 hover:text-blue-600 transition">Features</a>
+                    <a href="architecture.html" class="text-gray-700 hover:text-blue-600 transition">Architecture</a>
+                    <a href="use-cases.html" class="text-gray-700 hover:text-blue-600 transition">Use Cases</a>
+                    <a href="project.html" class="text-gray-700 hover:text-blue-600 transition">Project Details</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Request Demo
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Home</a>
+                <a href="features.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Features</a>
+                <a href="architecture.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Architecture</a>
+                <a href="use-cases.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Use Cases</a>
+                <a href="project.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Project Details</a>
+                <a href="contact.html" class="block px-3 py-2 text-blue-600 font-semibold">Request Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Enterprise RAG Platform
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Production-grade Retrieval Augmented Generation system with advanced AI,
+                    multi-modal processing, and intelligent knowledge management
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg">
+                        Request Demo
+                    </a>
+                    <a href="features.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-50 transition border-2 border-blue-600">
+                        Explore Features
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">35+</div>
+                    <div class="text-gray-600">Enterprise Features</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">5</div>
+                    <div class="text-gray-600">Retrieval Strategies</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">8</div>
+                    <div class="text-gray-600">Integrated Services</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">95%</div>
+                    <div class="text-gray-600">POC Ready</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Why Choose Our RAG Platform?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-blue-600 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Intelligent Retrieval</h3>
+                    <p class="text-gray-600">
+                        5 advanced retrieval strategies including vector search, graph-based retrieval,
+                        hybrid search with RRF, HyDE, and query decomposition. Automatically selects
+                        the best strategy for your query.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-purple-600 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Multi-Modal Support</h3>
+                    <p class="text-gray-600">
+                        Process and understand multiple content types: text documents, images, audio,
+                        and video. Extract insights from PDFs, presentations, code, and more with
+                        advanced AI analysis.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Enterprise Ready</h3>
+                    <p class="text-gray-600">
+                        Production-grade features including PII detection, cost tracking, quality
+                        evaluation, circuit breakers, rate limiting, and comprehensive monitoring
+                        with Prometheus and Grafana.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Core Capabilities</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Built with modern technologies and best practices for enterprise deployment
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition">
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Vector Search</h3>
+                    <p class="text-gray-600">High-performance semantic search using Weaviate vector database with HNSW indexing</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition">
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Knowledge Graph</h3>
+                    <p class="text-gray-600">Neo4j-powered relationship mapping for contextual understanding and entity connections</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition">
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Real-time Streaming</h3>
+                    <p class="text-gray-600">Server-Sent Events for live response streaming and enhanced user experience</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition">
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Quality Metrics</h3>
+                    <p class="text-gray-600">Automatic evaluation of relevance, faithfulness, and coherence for every response</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition">
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Cost Tracking</h3>
+                    <p class="text-gray-600">Token usage monitoring, budget alerts, and detailed cost analytics dashboard</p>
+                </div>
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-blue-600 transition">
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Modern UI</h3>
+                    <p class="text-gray-600">React-based interface with dark mode, multi-language support, and responsive design</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="features.html" class="text-blue-600 font-semibold hover:text-blue-700 transition">
+                    View All 35 Features →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Built with Modern Technologies</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Backend</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <span class="text-blue-600 mr-2">✓</span>
+                            Java 21 + Spring Boot 3.2.5
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 mr-2">✓</span>
+                            Spring AI 1.0.0-M1
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 mr-2">✓</span>
+                            PostgreSQL + Neo4j + Weaviate + Redis
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 mr-2">✓</span>
+                            OpenAI / ProxyLLM Integration
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Frontend</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <span class="text-purple-600 mr-2">✓</span>
+                            React 18 + TypeScript 5.3
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-purple-600 mr-2">✓</span>
+                            Vite 5.0 + Tailwind CSS 3.4
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-purple-600 mr-2">✓</span>
+                            Zustand + React Query + i18next
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-purple-600 mr-2">✓</span>
+                            shadcn/ui Components
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="project.html" class="text-blue-600 font-semibold hover:text-blue-700 transition">
+                    View Full Technical Details →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Preview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Enterprise Use Cases</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Customer Support</h3>
+                    <p class="text-gray-600">AI-powered support with source citations and context-aware responses</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Knowledge Management</h3>
+                    <p class="text-gray-600">Centralized company knowledge with intelligent search and retrieval</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Code Assistant</h3>
+                    <p class="text-gray-600">RAG over codebases, documentation, and technical resources</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="use-cases.html" class="text-blue-600 font-semibold hover:text-blue-700 transition">
+                    Explore All Use Cases →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Ready to Transform Your Knowledge Management?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Get started with our enterprise RAG platform and see the difference intelligent retrieval makes
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+                    Request Demo
+                </a>
+                <a href="project.html" class="bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-800 transition border-2 border-white">
+                    View Project Details
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">RAG Enterprise Platform</h3>
+                    <p class="text-sm">Production-grade AI-powered knowledge management and intelligent retrieval system.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="features.html" class="hover:text-white transition">Features</a></li>
+                        <li><a href="architecture.html" class="hover:text-white transition">Architecture</a></li>
+                        <li><a href="project.html" class="hover:text-white transition">Project Details</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="use-cases.html" class="hover:text-white transition">Use Cases</a></li>
+                        <li><a href="project.html#tech-stack" class="hover:text-white transition">Tech Stack</a></li>
+                        <li><a href="project.html#deployment" class="hover:text-white transition">Deployment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition">Request Demo</a></li>
+                        <li><a href="https://github.com/cristigirbovan" class="hover:text-white transition" target="_blank">GitHub</a></li>
+                        <li><a href="https://linkedin.com" class="hover:text-white transition" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
+                <p>&copy; 2025 RAG Enterprise Platform. Built for Enterprise AI Applications.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

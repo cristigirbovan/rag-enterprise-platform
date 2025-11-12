@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - RAG Enterprise Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                        RAG Enterprise Platform
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="features.html" class="text-gray-700 hover:text-blue-600 transition">Features</a>
+                    <a href="architecture.html" class="text-gray-700 hover:text-blue-600 transition">Architecture</a>
+                    <a href="use-cases.html" class="text-gray-700 hover:text-blue-600 transition">Use Cases</a>
+                    <a href="project.html" class="text-blue-600 font-semibold">Project Details</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Request Demo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold text-gray-900 mb-4">Project Details</h1>
+            <p class="text-xl text-gray-600 max-w-3xl">
+                Complete technical overview of the RAG Enterprise Platform implementation,
+                architecture, and deployment approach.
+            </p>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Project Overview</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">What is This Project?</h3>
+                    <p class="text-gray-600 mb-4">
+                        A production-grade Retrieval Augmented Generation (RAG) system designed for
+                        enterprise knowledge management and intelligent question-answering. Built with
+                        modern technologies and best practices for scalability, security, and performance.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        The system combines advanced AI capabilities with multiple retrieval strategies,
+                        multi-modal processing, and a comprehensive React-based user interface.
+                    </p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Key Statistics</h3>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between">
+                            <span class="text-gray-600">Total Features:</span>
+                            <span class="font-bold">35 (11 backend + 24 frontend)</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-600">Code Lines:</span>
+                            <span class="font-bold">16,414 lines</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-600">API Endpoints:</span>
+                            <span class="font-bold">15 endpoints</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-600">Docker Services:</span>
+                            <span class="font-bold">8 services</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-600">Databases:</span>
+                            <span class="font-bold">4 types</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-600">Dependencies:</span>
+                            <span class="font-bold">111 total (65 Maven + 46 npm)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tech-stack" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Technology Stack</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Backend -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Backend</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-2">Core Framework</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Java 21</li>
+                                <li>• Spring Boot 3.2.5</li>
+                                <li>• Spring AI 1.0.0-M1</li>
+                                <li>• Maven 3.9+</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">AI & ML</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• OpenAI API</li>
+                                <li>• ProxyLLM Support</li>
+                                <li>• Spring AI Integration</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">Resilience</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Resilience4j Circuit Breakers</li>
+                                <li>• Rate Limiting</li>
+                                <li>• Health Checks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-600">Frontend</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-2">Core Framework</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• React 18.2</li>
+                                <li>• TypeScript 5.3</li>
+                                <li>• Vite 5.0</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">UI & Styling</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• shadcn/ui Components</li>
+                                <li>• Tailwind CSS 3.4</li>
+                                <li>• Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">State & Data</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Zustand (State Management)</li>
+                                <li>• React Query 5.17</li>
+                                <li>• i18next (i18n)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases & Infrastructure -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-green-600">Infrastructure</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-2">Databases</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Weaviate (Vector DB)</li>
+                                <li>• Neo4j (Graph DB)</li>
+                                <li>• PostgreSQL (SQL)</li>
+                                <li>• Redis (Cache)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2">DevOps</h4>
+                            <ul class="text-gray-600 space-y-1">
+                                <li>• Docker Compose</li>
+                                <li>• Nginx</li>
+                                <li>• Prometheus</li>
+                                <li>• Grafana</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">System Architecture</h2>
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-4">Multi-Module Design</h3>
+                <p class="text-gray-600 mb-4">
+                    The backend follows a clean modular architecture with clear separation of concerns:
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h4 class="font-bold mb-2">rag-common</h4>
+                        <p class="text-gray-600">Shared utilities, models, and DTOs used across all modules</p>
+                    </div>
+                    <div class="border-l-4 border-purple-600 pl-4">
+                        <h4 class="font-bold mb-2">rag-storage</h4>
+                        <p class="text-gray-600">Database repositories and data access layer</p>
+                    </div>
+                    <div class="border-l-4 border-green-600 pl-4">
+                        <h4 class="font-bold mb-2">rag-core</h4>
+                        <p class="text-gray-600">Core RAG logic, retrieval strategies, and processing pipeline</p>
+                    </div>
+                    <div class="border-l-4 border-orange-600 pl-4">
+                        <h4 class="font-bold mb-2">rag-api</h4>
+                        <p class="text-gray-600">REST API controllers, configuration, and entry point</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Retrieval Strategies</h3>
+                <p class="text-gray-600 mb-4">
+                    Five specialized retrieval strategies with intelligent routing:
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded border-l-4 border-blue-600">
+                        <h4 class="font-bold mb-1">Vector Search</h4>
+                        <p class="text-sm text-gray-600">Semantic similarity using Weaviate</p>
+                    </div>
+                    <div class="bg-white p-4 rounded border-l-4 border-purple-600">
+                        <h4 class="font-bold mb-1">Graph Retrieval</h4>
+                        <p class="text-sm text-gray-600">Relationship-based using Neo4j</p>
+                    </div>
+                    <div class="bg-white p-4 rounded border-l-4 border-green-600">
+                        <h4 class="font-bold mb-1">Hybrid (RRF)</h4>
+                        <p class="text-sm text-gray-600">Reciprocal Rank Fusion combining multiple sources</p>
+                    </div>
+                    <div class="bg-white p-4 rounded border-l-4 border-orange-600">
+                        <h4 class="font-bold mb-1">HyDE</h4>
+                        <p class="text-sm text-gray-600">Hypothetical Document Embeddings</p>
+                    </div>
+                    <div class="bg-white p-4 rounded border-l-4 border-red-600">
+                        <h4 class="font-bold mb-1">Decomposition</h4>
+                        <p class="text-sm text-gray-600">Query breaking into sub-queries</p>
+                    </div>
+                    <div class="bg-white p-4 rounded border-l-4 border-indigo-600">
+                        <h4 class="font-bold mb-1">AUTO</h4>
+                        <p class="text-sm text-gray-600">Intelligent strategy selection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment -->
+    <section id="deployment" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Deployment</h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Docker Compose Setup</h3>
+                    <p class="text-gray-600 mb-4">
+                        Complete multi-container deployment with 8 services orchestrated via Docker Compose:
+                    </p>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <pre class="text-sm"><code>docker-compose up --build -d</code></pre>
+                    </div>
+                    <div class="mt-4 space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span>Frontend (React):</span>
+                            <span class="font-mono">localhost:3000</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>API (Spring Boot):</span>
+                            <span class="font-mono">localhost:8080</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Grafana:</span>
+                            <span class="font-mono">localhost:3001</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Neo4j Browser:</span>
+                            <span class="font-mono">localhost:7474</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Production Readiness</h3>
+                    <div class="space-y-4">
+                        <div class="bg-green-50 border-l-4 border-green-600 p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold">POC/Demo</h4>
+                                <span class="text-2xl font-bold text-green-600">95%</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Deploy immediately with Docker Compose</p>
+                        </div>
+                        <div class="bg-yellow-50 border-l-4 border-yellow-600 p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold">Internal Production</h4>
+                                <span class="text-2xl font-bold text-yellow-600">85%</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Need security hardening (1-2 weeks)</p>
+                        </div>
+                        <div class="bg-orange-50 border-l-4 border-orange-600 p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <h4 class="font-bold">Customer Production</h4>
+                                <span class="text-2xl font-bold text-orange-600">70%</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Need full audit + tests (1 month)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Endpoints -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">API Endpoints</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Endpoint</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Method</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/query</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
+                            <td class="px-6 py-4 text-sm">Process query and get response</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/query-stream</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
+                            <td class="px-6 py-4 text-sm">Stream response with SSE</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/ingest</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
+                            <td class="px-6 py-4 text-sm">Ingest documents</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/analytics</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
+                            <td class="px-6 py-4 text-sm">Get usage analytics</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/graph</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
+                            <td class="px-6 py-4 text-sm">Get knowledge graph data</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/conversations</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
+                            <td class="px-6 py-4 text-sm">List conversations</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/actuator/health</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
+                            <td class="px-6 py-4 text-sm">Health check</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-sm text-gray-600 mt-4">
+                Total: 15 API endpoints including admin, analytics, and monitoring endpoints
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Interested in the Implementation?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Contact us to discuss deployment options, customization, or partnership opportunities
+            </p>
+            <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">RAG Enterprise Platform</h3>
+                    <p class="text-sm">Production-grade AI-powered knowledge management.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="features.html" class="hover:text-white transition">Features</a></li>
+                        <li><a href="architecture.html" class="hover:text-white transition">Architecture</a></li>
+                        <li><a href="project.html" class="hover:text-white transition">Project Details</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="use-cases.html" class="hover:text-white transition">Use Cases</a></li>
+                        <li><a href="#tech-stack" class="hover:text-white transition">Tech Stack</a></li>
+                        <li><a href="#deployment" class="hover:text-white transition">Deployment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition">Request Demo</a></li>
+                        <li><a href="https://github.com/cristigirbovan" class="hover:text-white transition">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
+                <p>&copy; 2025 RAG Enterprise Platform. Built for Enterprise AI Applications.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
