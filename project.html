@@ -70,7 +70,7 @@
                         </li>
                         <li class="flex justify-between">
                             <span class="text-gray-600">API Endpoints:</span>
-                            <span class="font-bold">15 endpoints</span>
+                            <span class="font-bold">11 endpoints</span>
                         </li>
                         <li class="flex justify-between">
                             <span class="text-gray-600">Docker Services:</span>
@@ -250,68 +250,6 @@
         </div>
     </section>
 
-    <!-- Deployment -->
-    <section id="deployment" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-8">Deployment</h2>
-            <div class="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">Docker Compose Setup</h3>
-                    <p class="text-gray-600 mb-4">
-                        Complete multi-container deployment with 8 services orchestrated via Docker Compose:
-                    </p>
-                    <div class="bg-white p-4 rounded-lg shadow">
-                        <pre class="text-sm"><code>docker-compose up --build -d</code></pre>
-                    </div>
-                    <div class="mt-4 space-y-2 text-sm">
-                        <div class="flex justify-between">
-                            <span>Frontend (React):</span>
-                            <span class="font-mono">localhost:3000</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span>API (Spring Boot):</span>
-                            <span class="font-mono">localhost:8080</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span>Grafana:</span>
-                            <span class="font-mono">localhost:3001</span>
-                        </div>
-                        <div class="flex justify-between">
-                            <span>Neo4j Browser:</span>
-                            <span class="font-mono">localhost:7474</span>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">Production Readiness</h3>
-                    <div class="space-y-4">
-                        <div class="bg-green-50 border-l-4 border-green-600 p-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <h4 class="font-bold">POC/Demo</h4>
-                                <span class="text-2xl font-bold text-green-600">95%</span>
-                            </div>
-                            <p class="text-sm text-gray-600">Deploy immediately with Docker Compose</p>
-                        </div>
-                        <div class="bg-yellow-50 border-l-4 border-yellow-600 p-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <h4 class="font-bold">Internal Production</h4>
-                                <span class="text-2xl font-bold text-yellow-600">85%</span>
-                            </div>
-                            <p class="text-sm text-gray-600">Need security hardening (1-2 weeks)</p>
-                        </div>
-                        <div class="bg-orange-50 border-l-4 border-orange-600 p-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <h4 class="font-bold">Customer Production</h4>
-                                <span class="text-2xl font-bold text-orange-600">70%</span>
-                            </div>
-                            <p class="text-sm text-gray-600">Need full audit + tests (1 month)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- API Endpoints -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -329,43 +267,68 @@
                         <tr>
                             <td class="px-6 py-4 text-sm font-mono">/api/v1/query</td>
                             <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
-                            <td class="px-6 py-4 text-sm">Process query and get response</td>
+                            <td class="px-6 py-4 text-sm">Process query and generate AI-powered response</td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 text-sm font-mono">/api/v1/query-stream</td>
                             <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">Stream response with SSE</td>
+                            <td class="px-6 py-4 text-sm">Stream response with Server-Sent Events (SSE)</td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 text-sm font-mono">/api/v1/ingest</td>
                             <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
-                            <td class="px-6 py-4 text-sm">Ingest documents</td>
+                            <td class="px-6 py-4 text-sm">Ingest documents into the knowledge base</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/health</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
+                            <td class="px-6 py-4 text-sm">System health check endpoint</td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 text-sm font-mono">/api/v1/analytics</td>
                             <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">Get usage analytics</td>
+                            <td class="px-6 py-4 text-sm">Get usage analytics and metrics</td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 text-sm font-mono">/api/v1/graph</td>
                             <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">Get knowledge graph data</td>
+                            <td class="px-6 py-4 text-sm">Get knowledge graph visualization data</td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 text-sm font-mono">/api/v1/conversations</td>
                             <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">List conversations</td>
+                            <td class="px-6 py-4 text-sm">List all conversations</td>
                         </tr>
                         <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/actuator/health</td>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/conversations</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
+                            <td class="px-6 py-4 text-sm">Save a new conversation</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/conversations/{id}</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-red-100 text-red-800 px-2 py-1 rounded">DELETE</span></td>
+                            <td class="px-6 py-4 text-sm">Delete a conversation by ID</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/feedback</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
+                            <td class="px-6 py-4 text-sm">Submit user feedback (thumbs up/down)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/documents</td>
                             <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">Health check</td>
+                            <td class="px-6 py-4 text-sm">List all documents in the knowledge base</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm font-mono">/api/v1/documents/{id}</td>
+                            <td class="px-6 py-4 text-sm"><span class="bg-red-100 text-red-800 px-2 py-1 rounded">DELETE</span></td>
+                            <td class="px-6 py-4 text-sm">Delete a document by ID</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <p class="text-sm text-gray-600 mt-4">
-                Total: 15 API endpoints including admin, analytics, and monitoring endpoints
+                Total: 11 API endpoints across 3 controllers (RagApiController, StreamingController, AnalyticsController)
             </p>
         </div>
     </section>
@@ -404,7 +367,7 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="use-cases.html" class="hover:text-white transition">Use Cases</a></li>
                         <li><a href="#tech-stack" class="hover:text-white transition">Tech Stack</a></li>
-                        <li><a href="#deployment" class="hover:text-white transition">Deployment</a></li>
+                        <li><a href="architecture.html" class="hover:text-white transition">System Architecture</a></li>
                     </ul>
                 </div>
                 <div>
