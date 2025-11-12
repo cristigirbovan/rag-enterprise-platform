@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Details - RAG Enterprise Platform</title>
+    <title>How It Works - RAG Enterprise Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation (same as index.html) -->
+    <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <div class="flex items-center"><img src="images/claracore-logo.png" alt="ClaraCore" class="h-10 mr-4"><a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    <img src="images/claracore-logo.png" alt="ClaraCore" class="h-10 mr-3">
+                    <a href="index.html" class="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent whitespace-nowrap">
                         RAG Enterprise Platform
                     </a>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
-                    <a href="features.html" class="text-gray-700 hover:text-blue-600 transition">Features</a>
-                    <a href="architecture.html" class="text-gray-700 hover:text-blue-600 transition">Architecture</a>
-                    <a href="use-cases.html" class="text-gray-700 hover:text-blue-600 transition">Use Cases</a>
-                    <a href="project.html" class="text-blue-600 font-semibold">Project Details</a>
-                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Request Demo</a>
+                <div class="hidden md:flex items-center space-x-4 lg:space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition text-sm lg:text-base">Home</a>
+                    <a href="project.html" class="text-blue-600 font-semibold text-sm lg:text-base">How It Works</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-3 lg:px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm lg:text-base">
+                        Contact
+                    </a>
                 </div>
             </div>
         </div>
@@ -32,57 +32,250 @@
     <!-- Hero -->
     <section class="pt-24 pb-12 bg-gradient-to-br from-blue-50 to-purple-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-5xl font-bold text-gray-900 mb-4">Project Details</h1>
+            <h1 class="text-5xl font-bold text-gray-900 mb-4">How It Works</h1>
             <p class="text-xl text-gray-600 max-w-3xl">
-                Complete technical overview of the RAG Enterprise Platform implementation,
-                architecture, and deployment approach.
+                Understand how the RAG Enterprise Platform helps you find answers in your documents
+                using advanced search and artificial intelligence.
             </p>
         </div>
     </section>
 
-    <!-- Project Overview -->
+    <!-- What Does This System Do -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-8">Project Overview</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-900">What is This Project?</h3>
-                    <p class="text-gray-600 mb-4">
-                        A production-grade Retrieval Augmented Generation (RAG) system designed for
-                        enterprise knowledge management and intelligent question-answering. Built with
-                        modern technologies and best practices for scalability, security, and performance.
-                    </p>
-                    <p class="text-gray-600 mb-4">
-                        The system combines advanced AI capabilities with multiple retrieval strategies,
-                        multi-modal processing, and a comprehensive React-based user interface.
-                    </p>
+            <h2 class="text-3xl font-bold mb-8">What Does This System Do?</h2>
+            <div class="prose max-w-none">
+                <p class="text-lg text-gray-600 mb-6">
+                    Think of this system as an intelligent assistant that helps you find information in your company's documents.
+                    Instead of manually searching through hundreds of files, you simply ask a question in plain English, and
+                    the system finds the relevant information and gives you a clear answer with sources.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 mt-8">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <div class="text-3xl mb-4">📤</div>
+                        <h3 class="text-xl font-bold mb-3">1. Upload Your Documents</h3>
+                        <p class="text-gray-600">
+                            Upload PDFs, Word documents, presentations, or even images. The system reads and understands them automatically.
+                        </p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <div class="text-3xl mb-4">❓</div>
+                        <h3 class="text-xl font-bold mb-3">2. Ask Questions</h3>
+                        <p class="text-gray-600">
+                            Type your question in normal language, just like you'd ask a colleague. No special commands needed.
+                        </p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <div class="text-3xl mb-4">✅</div>
+                        <h3 class="text-xl font-bold mb-3">3. Get Answers</h3>
+                        <p class="text-gray-600">
+                            Receive clear answers with direct quotes from your documents, so you can verify the information.
+                        </p>
+                    </div>
                 </div>
-                <div class="bg-blue-50 p-6 rounded-lg">
-                    <h3 class="text-xl font-bold mb-4">Key Statistics</h3>
-                    <ul class="space-y-3">
-                        <li class="flex justify-between">
-                            <span class="text-gray-600">Total Features:</span>
-                            <span class="font-bold">35 (11 backend + 24 frontend)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Retrieval Strategies Explained -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-4">How the System Finds Information</h2>
+            <p class="text-lg text-gray-600 mb-12">
+                The system uses different search methods depending on your question. It automatically picks the best method,
+                but here's what happens behind the scenes:
+            </p>
+
+            <div class="space-y-6">
+                <!-- Vector Search -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-600">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Meaning-Based Search</h3>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Best for:</strong> Questions where you want documents that mean the same thing, even if they use different words
+                            </p>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Example:</strong> You search for "car accident" and the system also finds documents about "vehicle collision"
+                                or "auto crash" because it understands they mean similar things.
+                            </p>
+                            <div class="bg-blue-50 p-3 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>How it works:</strong> The system converts your question and all documents into mathematical patterns
+                                    that capture their meaning, then finds patterns that are most similar to your question.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graph Search -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-600">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Relationship-Based Search</h3>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Best for:</strong> Questions about how things are connected or related
+                            </p>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Example:</strong> You ask "Who works with John Smith?" and the system finds connections between
+                                people, projects, and departments mentioned in your documents.
+                            </p>
+                            <div class="bg-purple-50 p-3 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>How it works:</strong> The system builds a map of how people, places, and concepts in your documents
+                                    are connected, like a social network graph, then traces paths through these connections.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hybrid Search -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-600">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-3 rounded-lg mr-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Combined Search (Recommended)</h3>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Best for:</strong> Most questions - provides the most reliable results
+                            </p>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Example:</strong> You ask "What are our safety policies for warehouse equipment?" and the system
+                                uses both meaning-based and relationship-based searches, then ranks all results to show you the best matches.
+                            </p>
+                            <div class="bg-green-50 p-3 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>How it works:</strong> Combines multiple search methods and intelligently ranks the results,
+                                    ensuring you get the most relevant information regardless of how your documents are written.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HyDE -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-orange-600">
+                    <div class="flex items-start">
+                        <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Answer-First Search</h3>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Best for:</strong> Complex questions where you need expert-level information
+                            </p>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Example:</strong> You ask "What causes engine overheating?" The system first imagines what a good answer
+                                would look like, then searches for documents that match that imagined answer.
+                            </p>
+                            <div class="bg-orange-50 p-3 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>How it works:</strong> Instead of searching for your question directly, the system generates
+                                    a hypothetical answer first, then finds documents that are similar to that answer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decomposition -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-600">
+                    <div class="flex items-start">
+                        <div class="bg-red-100 p-3 rounded-lg mr-4">
+                            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Multi-Part Search</h3>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Best for:</strong> Complex questions with multiple parts
+                            </p>
+                            <p class="text-gray-600 mb-3">
+                                <strong>Example:</strong> You ask "What are our hiring procedures and salary ranges for engineers?"
+                                The system breaks this into two questions: one about hiring and one about salaries, searches for each separately,
+                                then combines the results.
+                            </p>
+                            <div class="bg-red-50 p-3 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong>How it works:</strong> Splits complex questions into simpler sub-questions,
+                                    searches for each independently, then assembles all findings into one comprehensive answer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-blue-50 border-l-4 border-blue-600 p-6 rounded">
+                <h4 class="font-bold text-lg mb-2">✨ Automatic Mode (Default)</h4>
+                <p class="text-gray-600">
+                    Don't worry about choosing the right search method! The system automatically analyzes your question
+                    and picks the best approach for you. It's like having an expert assistant who knows exactly which
+                    tool to use for each job.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section id="tech-stack" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Technology Foundation</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Backend -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Server Technology</h3>
+                    <p class="text-gray-700 mb-4">The "brain" that processes your questions and manages your documents</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <strong>Java 21 + Spring Boot:</strong> Enterprise-grade, reliable server framework
                         </li>
-                        <li class="flex justify-between">
-                            <span class="text-gray-600">Code Lines:</span>
-                            <span class="font-bold">16,414 lines</span>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <strong>4 Specialized Databases:</strong> Different types for different needs (vectors, relationships, data, cache)
                         </li>
-                        <li class="flex justify-between">
-                            <span class="text-gray-600">API Endpoints:</span>
-                            <span class="font-bold">11 endpoints</span>
+                        <li class="flex items-center">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <strong>OpenAI Integration:</strong> Uses advanced AI models for understanding and answering questions
                         </li>
-                        <li class="flex justify-between">
-                            <span class="text-gray-600">Docker Services:</span>
-                            <span class="font-bold">8 services</span>
+                    </ul>
+                </div>
+
+                <!-- Frontend -->
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-900">User Interface</h3>
+                    <p class="text-gray-700 mb-4">The modern, easy-to-use interface you interact with</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-purple-600 mr-2">•</span>
+                            <strong>React + TypeScript:</strong> Fast, responsive web application
                         </li>
-                        <li class="flex justify-between">
-                            <span class="text-gray-600">Databases:</span>
-                            <span class="font-bold">4 types</span>
+                        <li class="flex items-center">
+                            <span class="text-purple-600 mr-2">•</span>
+                            <strong>Real-Time Updates:</strong> See answers appear as they're generated
                         </li>
-                        <li class="flex justify-between">
-                            <span class="text-gray-600">Dependencies:</span>
-                            <span class="font-bold">111 total (65 Maven + 46 npm)</span>
+                        <li class="flex items-center">
+                            <span class="text-purple-600 mr-2">•</span>
+                            <strong>Dark Mode & Multi-Language:</strong> Customizable to your preferences
                         </li>
                     </ul>
                 </div>
@@ -90,255 +283,60 @@
         </div>
     </section>
 
-    <!-- Tech Stack -->
-    <section id="tech-stack" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-8">Technology Stack</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Backend -->
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Backend</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="font-semibold mb-2">Core Framework</h4>
-                            <ul class="text-gray-600 space-y-1">
-                                <li>• Java 21</li>
-                                <li>• Spring Boot 3.2.5</li>
-                                <li>• Spring AI 1.0.0-M1</li>
-                                <li>• Maven 3.9+</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold mb-2">AI & ML</h4>
-                            <ul class="text-gray-600 space-y-1">
-                                <li>• OpenAI API</li>
-                                <li>• ProxyLLM Support</li>
-                                <li>• Spring AI Integration</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold mb-2">Resilience</h4>
-                            <ul class="text-gray-600 space-y-1">
-                                <li>• Resilience4j Circuit Breakers</li>
-                                <li>• Rate Limiting</li>
-                                <li>• Health Checks</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Frontend -->
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4 text-purple-600">Frontend</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="font-semibold mb-2">Core Framework</h4>
-                            <ul class="text-gray-600 space-y-1">
-                                <li>• React 18.2</li>
-                                <li>• TypeScript 5.3</li>
-                                <li>• Vite 5.0</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold mb-2">UI & Styling</h4>
-                            <ul class="text-gray-600 space-y-1">
-                                <li>• shadcn/ui Components</li>
-                                <li>• Tailwind CSS 3.4</li>
-                                <li>• Responsive Design</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold mb-2">State & Data</h4>
-                            <ul class="text-gray-600 space-y-1">
-                                <li>• Zustand (State Management)</li>
-                                <li>• React Query 5.17</li>
-                                <li>• i18next (i18n)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Databases & Infrastructure -->
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4 text-green-600">Infrastructure</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="font-semibold mb-2">Databases</h4>
-                            <ul class="text-gray-600 space-y-1">
-                                <li>• Weaviate (Vector DB)</li>
-                                <li>• Neo4j (Graph DB)</li>
-                                <li>• PostgreSQL (SQL)</li>
-                                <li>• Redis (Cache)</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold mb-2">DevOps</h4>
-                            <ul class="text-gray-600 space-y-1">
-                                <li>• Docker Compose</li>
-                                <li>• Nginx</li>
-                                <li>• Prometheus</li>
-                                <li>• Grafana</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Architecture -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-8">System Architecture</h2>
-            <div class="mb-8">
-                <h3 class="text-2xl font-bold mb-4">Multi-Module Design</h3>
-                <p class="text-gray-600 mb-4">
-                    The backend follows a clean modular architecture with clear separation of concerns:
-                </p>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="border-l-4 border-blue-600 pl-4">
-                        <h4 class="font-bold mb-2">rag-common</h4>
-                        <p class="text-gray-600">Shared utilities, models, and DTOs used across all modules</p>
-                    </div>
-                    <div class="border-l-4 border-purple-600 pl-4">
-                        <h4 class="font-bold mb-2">rag-storage</h4>
-                        <p class="text-gray-600">Database repositories and data access layer</p>
-                    </div>
-                    <div class="border-l-4 border-green-600 pl-4">
-                        <h4 class="font-bold mb-2">rag-core</h4>
-                        <p class="text-gray-600">Core RAG logic, retrieval strategies, and processing pipeline</p>
-                    </div>
-                    <div class="border-l-4 border-orange-600 pl-4">
-                        <h4 class="font-bold mb-2">rag-api</h4>
-                        <p class="text-gray-600">REST API controllers, configuration, and entry point</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-2xl font-bold mb-4">Retrieval Strategies</h3>
-                <p class="text-gray-600 mb-4">
-                    Five specialized retrieval strategies with intelligent routing:
-                </p>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="bg-white p-4 rounded border-l-4 border-blue-600">
-                        <h4 class="font-bold mb-1">Vector Search</h4>
-                        <p class="text-sm text-gray-600">Semantic similarity using Weaviate</p>
-                    </div>
-                    <div class="bg-white p-4 rounded border-l-4 border-purple-600">
-                        <h4 class="font-bold mb-1">Graph Retrieval</h4>
-                        <p class="text-sm text-gray-600">Relationship-based using Neo4j</p>
-                    </div>
-                    <div class="bg-white p-4 rounded border-l-4 border-green-600">
-                        <h4 class="font-bold mb-1">Hybrid (RRF)</h4>
-                        <p class="text-sm text-gray-600">Reciprocal Rank Fusion combining multiple sources</p>
-                    </div>
-                    <div class="bg-white p-4 rounded border-l-4 border-orange-600">
-                        <h4 class="font-bold mb-1">HyDE</h4>
-                        <p class="text-sm text-gray-600">Hypothetical Document Embeddings</p>
-                    </div>
-                    <div class="bg-white p-4 rounded border-l-4 border-red-600">
-                        <h4 class="font-bold mb-1">Decomposition</h4>
-                        <p class="text-sm text-gray-600">Query breaking into sub-queries</p>
-                    </div>
-                    <div class="bg-white p-4 rounded border-l-4 border-indigo-600">
-                        <h4 class="font-bold mb-1">AUTO</h4>
-                        <p class="text-sm text-gray-600">Intelligent strategy selection</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- API Endpoints -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-8">API Endpoints</h2>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white border">
-                    <thead class="bg-gray-50">
-                        <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Endpoint</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Method</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-200">
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/query</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
-                            <td class="px-6 py-4 text-sm">Process query and generate AI-powered response</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/query-stream</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">Stream response with Server-Sent Events (SSE)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/ingest</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
-                            <td class="px-6 py-4 text-sm">Ingest documents into the knowledge base</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/health</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">System health check endpoint</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/analytics</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">Get usage analytics and metrics</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/graph</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">Get knowledge graph visualization data</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/conversations</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">List all conversations</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/conversations</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
-                            <td class="px-6 py-4 text-sm">Save a new conversation</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/conversations/{id}</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-red-100 text-red-800 px-2 py-1 rounded">DELETE</span></td>
-                            <td class="px-6 py-4 text-sm">Delete a conversation by ID</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/feedback</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">POST</span></td>
-                            <td class="px-6 py-4 text-sm">Submit user feedback (thumbs up/down)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/documents</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">GET</span></td>
-                            <td class="px-6 py-4 text-sm">List all documents in the knowledge base</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 text-sm font-mono">/api/v1/documents/{id}</td>
-                            <td class="px-6 py-4 text-sm"><span class="bg-red-100 text-red-800 px-2 py-1 rounded">DELETE</span></td>
-                            <td class="px-6 py-4 text-sm">Delete a document by ID</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="text-sm text-gray-600 mt-4">
-                Total: 11 API endpoints across 3 controllers (RagApiController, StreamingController, AnalyticsController)
+            <h2 class="text-3xl font-bold mb-4">System Capabilities</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                The platform provides 11 different operations you can perform:
             </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-green-600">
+                    <h4 class="font-bold mb-2">💬 Ask Questions</h4>
+                    <p class="text-sm text-gray-600">Get AI-powered answers from your documents</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-blue-600">
+                    <h4 class="font-bold mb-2">⚡ Live Streaming</h4>
+                    <p class="text-sm text-gray-600">Watch answers appear in real-time as they're generated</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-purple-600">
+                    <h4 class="font-bold mb-2">📤 Upload Documents</h4>
+                    <p class="text-sm text-gray-600">Add PDFs, Word docs, images, and more</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-orange-600">
+                    <h4 class="font-bold mb-2">✅ System Health</h4>
+                    <p class="text-sm text-gray-600">Check if everything is running smoothly</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-cyan-600">
+                    <h4 class="font-bold mb-2">📊 View Analytics</h4>
+                    <p class="text-sm text-gray-600">See usage statistics and performance metrics</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-indigo-600">
+                    <h4 class="font-bold mb-2">🕸️ Knowledge Map</h4>
+                    <p class="text-sm text-gray-600">Visualize how concepts are connected</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-pink-600">
+                    <h4 class="font-bold mb-2">💾 Save Conversations</h4>
+                    <p class="text-sm text-gray-600">Keep track of previous Q&A sessions</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-yellow-600">
+                    <h4 class="font-bold mb-2">👍 Give Feedback</h4>
+                    <p class="text-sm text-gray-600">Rate answers to improve quality</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow border-l-4 border-red-600">
+                    <h4 class="font-bold mb-2">📋 Manage Documents</h4>
+                    <p class="text-sm text-gray-600">View and organize your knowledge base</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- CTA -->
     <section class="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-white mb-4">Interested in the Implementation?</h2>
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Try It Out?</h2>
             <p class="text-xl text-blue-100 mb-8">
-                Contact us to discuss deployment options, customization, or partnership opportunities
+                Contact us to see the platform in action and discuss how it can help your organization
             </p>
             <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition inline-block">
                 Get in Touch
@@ -349,32 +347,25 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <h3 class="text-white font-bold text-lg mb-4">RAG Enterprise Platform</h3>
-                    <p class="text-sm">Production-grade AI-powered knowledge management.</p>
+                    <p class="text-sm">Intelligent document search and question answering for enterprises.</p>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Platform</h4>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="features.html" class="hover:text-white transition">Features</a></li>
-                        <li><a href="architecture.html" class="hover:text-white transition">Architecture</a></li>
-                        <li><a href="project.html" class="hover:text-white transition">Project Details</a></li>
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="project.html" class="hover:text-white transition">How It Works</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <h4 class="text-white font-semibold mb-4">Connect</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="use-cases.html" class="hover:text-white transition">Use Cases</a></li>
-                        <li><a href="#tech-stack" class="hover:text-white transition">Tech Stack</a></li>
-                        <li><a href="architecture.html" class="hover:text-white transition">System Architecture</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="contact.html" class="hover:text-white transition">Request Demo</a></li>
-                        <li><a href="https://github.com/cristigirbovan" class="hover:text-white transition">GitHub</a></li>
+                        <li><a href="https://github.com/cristigirbovan" class="hover:text-white transition" target="_blank">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/cristigirbovan" class="hover:text-white transition" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:cristigirbovan@gmail.com" class="hover:text-white transition">Email</a></li>
                     </ul>
                 </div>
             </div>
